@@ -1,0 +1,26 @@
+.router-container {
+    padding: 20px;
+}
+
+.md-toolbar-tools {
+    width: 100%;
+}
+
+.center {
+    display: block;
+    overflow: auto;
+    position: relative;
+    top: -4px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.page-title {
+    cursor: pointer;
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+}

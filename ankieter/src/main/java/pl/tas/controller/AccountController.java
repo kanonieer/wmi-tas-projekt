@@ -20,6 +20,11 @@ public class AccountController {
         return repo.findOne(Long.parseLong(Id));
     }
 
+    @RequestMapping(method = RequestMethod.GET, value = "/getall")
+    public Iterable<Account> getAllAccounts() {
+        return repo.findAll();
+    }
+
     // TODO JSON response class
     @RequestMapping(method = RequestMethod.POST, value = "/create")
     public String create(@RequestBody Account account) {

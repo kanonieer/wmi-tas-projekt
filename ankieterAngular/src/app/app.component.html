@@ -1,3 +1,12 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <div class="md-toolbar-tools">
+    <span class="page-title" routerLink="/">Ankieter</span>
+    <div class="right">
+      <button md-raised-button color="warn" class="button-right-align" routerLink="/login">Login</button>
+    </div>
+    <span class="center">&nbsp;</span>
+  </div>
+</md-toolbar>
+<div class="router-container">
+  <router-outlet></router-outlet>
+</div>
