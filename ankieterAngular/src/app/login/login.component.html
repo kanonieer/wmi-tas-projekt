@@ -1,3 +1,4 @@
+<!--
 <div class="login jumbotron center-block">
   <h1>Login</h1>
   <form role="form" (submit)="login($event, username.value, password.value)">
@@ -13,3 +14,45 @@
     <a routerLink="/signup">Click here to Signup</a>
   </form>
 </div>
+-->
+
+
+<md-card class="demo-card demo-basic" style="width: 50%; margin: auto;">
+  <md-card-header>
+    <md-card-title><h1>Login</h1></md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <form role="form" (submit)="login($event, username.value, password.value)">
+
+        <md-input
+          placeholder="Username"
+          style="width: 50%"
+          type="text"
+          #username
+          class="form-control"
+          id="username"
+          required></md-input>
+
+        <md-input
+          placeholder="Password"
+          style="width: 50%"
+          type="password"
+          #password
+          class="form-control"
+          id="password"
+          required></md-input>
+
+        <button
+          md-raised-button
+          id="submit-login-btn"
+          type="submit"
+          color="primary">Submit</button>
+
+    </form>
+  </md-card-content>
+</md-card>
+<p style="margin-top:50px; text-align: center;">
+  <a routerLink="/signup" style="text-decoration: none">Click here to Sign up</a>
+</p>
+
+
